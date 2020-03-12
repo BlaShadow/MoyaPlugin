@@ -1,7 +1,6 @@
 # MoyaPlugin
 
-Simple but efective and extensible Moya plugin for loging all http responses, 
-this repository was created to demostrate how to create a custom plugin for moya but in the same way to create an extensible plugin for login, I know moya already have a log plugin in is does print so much info, and sometimes we just need a single line with a status and a url.
+Simple but effective and extensible Moya plugin for logging all HTTP responses, this repository was created to demonstrate how to create a custom plugin for moya but in the same way, to create an extensible plugin for login, I know moya already have a logging plugin in is does print so much info, and sometimes we just need a single line with a status and a URL.
 
 
 
