@@ -3,19 +3,24 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1E70B9C34E7E3365B1F100E9 /* Pods_LogPlugging.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CFB9372FAEAE58D7ECB94CB /* Pods_LogPlugging.framework */; };
 		BF4540682419A6E20084CD04 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF4540672419A6E20084CD04 /* AppDelegate.swift */; };
 		BF45406A2419A6E20084CD04 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF4540692419A6E20084CD04 /* SceneDelegate.swift */; };
 		BF45406C2419A6E20084CD04 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF45406B2419A6E20084CD04 /* ViewController.swift */; };
 		BF45406F2419A6E30084CD04 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF45406D2419A6E20084CD04 /* Main.storyboard */; };
 		BF4540712419A6E50084CD04 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF4540702419A6E50084CD04 /* Assets.xcassets */; };
 		BF4540742419A6E50084CD04 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF4540722419A6E50084CD04 /* LaunchScreen.storyboard */; };
+		BF45407D2419A8400084CD04 /* IPService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF45407C2419A8400084CD04 /* IPService.swift */; };
+		BF45407F2419A9460084CD04 /* IPDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF45407E2419A9460084CD04 /* IPDataService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3CFB9372FAEAE58D7ECB94CB /* Pods_LogPlugging.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LogPlugging.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		52EC1526027F65AF605E3AA9 /* Pods-LogPlugging.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LogPlugging.debug.xcconfig"; path = "Target Support Files/Pods-LogPlugging/Pods-LogPlugging.debug.xcconfig"; sourceTree = "<group>"; };
 		BF4540642419A6E20084CD04 /* LogPlugging.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LogPlugging.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF4540672419A6E20084CD04 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BF4540692419A6E20084CD04 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +29,9 @@
 		BF4540702419A6E50084CD04 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BF4540732419A6E50084CD04 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BF4540752419A6E50084CD04 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BF45407C2419A8400084CD04 /* IPService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IPService.swift; sourceTree = "<group>"; };
+		BF45407E2419A9460084CD04 /* IPDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IPDataService.swift; sourceTree = "<group>"; };
+		D2E6CF62933FA7612C46D62A /* Pods-LogPlugging.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LogPlugging.release.xcconfig"; path = "Target Support Files/Pods-LogPlugging/Pods-LogPlugging.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +39,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1E70B9C34E7E3365B1F100E9 /* Pods_LogPlugging.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6125B14B557197335AC619A6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				52EC1526027F65AF605E3AA9 /* Pods-LogPlugging.debug.xcconfig */,
+				D2E6CF62933FA7612C46D62A /* Pods-LogPlugging.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		BF45405B2419A6E20084CD04 = {
 			isa = PBXGroup;
 			children = (
 				BF4540662419A6E20084CD04 /* LogPlugging */,
 				BF4540652419A6E20084CD04 /* Products */,
+				6125B14B557197335AC619A6 /* Pods */,
+				F9DB6C6BD7FC994AFA1485C1 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,6 +76,7 @@
 		BF4540662419A6E20084CD04 /* LogPlugging */ = {
 			isa = PBXGroup;
 			children = (
+				BF45407B2419A8000084CD04 /* Network */,
 				BF4540672419A6E20084CD04 /* AppDelegate.swift */,
 				BF4540692419A6E20084CD04 /* SceneDelegate.swift */,
 				BF45406B2419A6E20084CD04 /* ViewController.swift */,
@@ -67,6 +88,23 @@
 			path = LogPlugging;
 			sourceTree = "<group>";
 		};
+		BF45407B2419A8000084CD04 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				BF45407C2419A8400084CD04 /* IPService.swift */,
+				BF45407E2419A9460084CD04 /* IPDataService.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		F9DB6C6BD7FC994AFA1485C1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3CFB9372FAEAE58D7ECB94CB /* Pods_LogPlugging.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +112,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BF4540782419A6E50084CD04 /* Build configuration list for PBXNativeTarget "LogPlugging" */;
 			buildPhases = (
+				72CAB75204C748D843DB829D /* [CP] Check Pods Manifest.lock */,
 				BF4540602419A6E20084CD04 /* Sources */,
 				BF4540612419A6E20084CD04 /* Frameworks */,
 				BF4540622419A6E20084CD04 /* Resources */,
+				5118A328517CE15166BA3A18 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -133,12 +173,56 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		5118A328517CE15166BA3A18 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LogPlugging/Pods-LogPlugging-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LogPlugging/Pods-LogPlugging-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-LogPlugging/Pods-LogPlugging-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		72CAB75204C748D843DB829D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LogPlugging-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		BF4540602419A6E20084CD04 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BF45407D2419A8400084CD04 /* IPService.swift in Sources */,
 				BF45406C2419A6E20084CD04 /* ViewController.swift in Sources */,
+				BF45407F2419A9460084CD04 /* IPDataService.swift in Sources */,
 				BF4540682419A6E20084CD04 /* AppDelegate.swift in Sources */,
 				BF45406A2419A6E20084CD04 /* SceneDelegate.swift in Sources */,
 			);
@@ -282,6 +366,7 @@
 		};
 		BF4540792419A6E50084CD04 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 52EC1526027F65AF605E3AA9 /* Pods-LogPlugging.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -300,6 +385,7 @@
 		};
 		BF45407A2419A6E50084CD04 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D2E6CF62933FA7612C46D62A /* Pods-LogPlugging.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
